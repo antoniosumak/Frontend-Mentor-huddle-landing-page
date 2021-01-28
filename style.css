@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-top: 40px;
+}
+
+.red {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col1 {
+  grid-column: 1/2;
+  top: 20%;
+  transform: translateY(20%);
+}
+.col2 {
+  top: 20%;
+  transform: translateY(20%);
+  grid-column: 2/3;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  padding-top: 50px;
+  line-height: 3.5rem;
+  padding-left: 30px;
+}
+
+p {
+  padding-top: 15px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 30px;
+  padding-right: 100px;
+  line-height: 1.6rem;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: 15px 60px;
+  border-radius: 9999px;
+  border: none;
+  outline: none;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: hsl(257, 40%, 49%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+.socials {
+  position: absolute;
+  margin-top: 340px;
+  right: 5%;
+  font-size: 25px;
+  color: white;
+  z-index: 100;
+}
+
+.fab {
+  padding: 0 5px;
+}
+
+.fab:hover {
+  color: hsl(300, 69%, 71%);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (min-width: 1250px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+  }
+  .col1 {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  .col2 {
+    grid-column: 1/3;
+    grid-row: 2;
+    text-align: center;
+  }
+  .red {
+    justify-items: center;
+  }
+
+  .col2 p {
+    padding: 0 50px;
+  }
+
+  .col2 h2 {
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-bottom: 20px;
+  }
+  .socials {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  button {
+    margin-left: 0;
+  }
+  .col1 img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .logo {
+    width: 150px;
+    height: 37.128px;
+    padding-left: 35px;
+  }
+}
+
+/*Frontend-Mentor-huddle-landing-page */
